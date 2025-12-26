@@ -1,6 +1,6 @@
 # 🌟 Kartik Goel - Portfolio Website
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://your-portfolio.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://kartikgoel-portfolio.vercel.app)
 [![React](https://img.shields.io/badge/React-18.3.1-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.4.2-purple)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -179,7 +179,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Kartik Goel**
-- Portfolio: [your-portfolio.vercel.app](https://your-portfolio.vercel.app)
+- Portfolio: [kartikgoel-portfolio.vercel.app](https://kartikgoel-portfolio.vercel.app)
 - LinkedIn: [linkedin.com/in/kartik-goel-a95b2630b](https://www.linkedin.com/in/kartik-goel-a95b2630b/)
 - GitHub: [github.com/goyalkartik773](https://github.com/goyalkartik773)
 - Email: goyalkartik773@gmail.com
