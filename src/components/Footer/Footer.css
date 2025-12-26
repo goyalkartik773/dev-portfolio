@@ -1,0 +1,456 @@
+#footer {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(180deg, #0a0e27 0%, #1a1f3a 50%, #0d1b2a 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0 30px 0;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.footer-brand {
+    flex: 1;
+    max-width: 400px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color), white, var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.logo-bracket {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.logo-dot {
+    color: var(--secondary-color);
+    font-size: 36px;
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 80px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.footer-column h3 {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-left: 0;
+}
+
+.footer-column ul li:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+/* Social Links */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    color: var(--primary-color);
+    font-size: 24px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(var(--primary-rgb), 0.1);
+    border: 1px solid rgba(var(--primary-rgb), 0.3);
+}
+
+.footer-social a:hover {
+    color: white;
+    background: rgba(var(--primary-rgb), 0.2);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 20px rgba(var(--primary-rgb), 0.4);
+    border-color: var(--primary-color);
+}
+
+/* Divider */
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(var(--primary-rgb), 0.5), transparent);
+    margin: 30px 0;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-copyright,
+.footer-made-with {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.footer-made-with {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.heart-icon {
+    color: #ff6b6b;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Animated Background */
+.footer-bg-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.footer-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(var(--primary-rgb), 0.15), transparent);
+    animation: float 20s ease-in-out infinite;
+}
+
+.footer-circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.footer-circle-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    right: -150px;
+    animation-delay: 5s;
+}
+
+.footer-circle-3 {
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 10s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translate(30px, -30px) scale(1.1);
+        opacity: 0.5;
+    }
+}
+
+/* Constellation Twinkling Stars */
+.footer-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.footer-star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: starPulse 4s ease-in-out infinite;
+    filter: blur(0.5px);
+}
+
+/* Cross-shaped star effect */
+.footer-star::before,
+.footer-star::after {
+    content: '';
+    position: absolute;
+    background: white;
+    top: 50%;
+    left: 50%;
+}
+
+.footer-star::before {
+    width: 100%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-star::after {
+    width: 30%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+/* Glowing halo around stars */
+.star-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(var(--primary-rgb), 0.4), transparent 70%);
+    border-radius: 50%;
+    animation: glowRotate 8s linear infinite;
+}
+
+@keyframes starPulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+        box-shadow: 0 0 2px rgba(255, 255, 255, 0.5),
+            0 0 4px rgba(var(--primary-rgb), 0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+            0 0 12px rgba(var(--primary-rgb), 0.6),
+            0 0 16px rgba(var(--secondary-rgb), 0.4);
+    }
+}
+
+@keyframes glowRotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Shooting star effect - occasional */
+.footer-star:nth-child(5n) {
+    animation: shootingStar 3s ease-in-out infinite;
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100px) translateY(100px);
+        opacity: 0;
+    }
+}
+
+/* Different sizes and colors for variety */
+.footer-star:nth-child(3n) {
+    background: var(--primary-color);
+}
+
+.footer-star:nth-child(5n) .star-glow {
+    background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.5), transparent 70%);
+}
+
+.footer-star:nth-child(7n) {
+    animation-duration: 5s;
+}
+
+.footer-star:nth-child(11n) {
+    background: var(--secondary-color);
+    animation-duration: 3s;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-top {
+        gap: 40px;
+    }
+
+    .footer-links {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer {
+        padding: 40px 0 20px 0;
+    }
+
+    .footer-content {
+        padding: 0 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-column h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-column ul li {
+        text-align: center;
+    }
+
+    .footer-column ul li:hover {
+        transform: translateX(0);
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        font-size: 24px;
+    }
+
+    .footer-tagline {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .footer-copyright,
+    .footer-made-with {
+        font-size: 12px;
+    }
+}

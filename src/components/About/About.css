@@ -1,0 +1,259 @@
+#about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+
+.leftabout {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px 40px 20px;
+}
+
+.circle-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color), 0 0 40px rgba(var(--primary-rgb), 0.5);
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(var(--primary-rgb), 0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.line {
+    width: 2px;
+    height: 180px;
+    background: linear-gradient(to bottom, var(--primary-color), rgba(var(--primary-rgb), 0.3));
+    position: relative;
+}
+
+.aboutdetails {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    max-width: 550px;
+    padding-top: 0;
+}
+
+.personalinfo,
+.education,
+.skills {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.aboutdetails ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutdetails h1 {
+    background: linear-gradient(to right, rgb(198, 42, 96), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.aboutdetails h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 30px;
+    background: linear-gradient(to bottom, rgb(198, 42, 96), var(--primary-color));
+    border-radius: 2px;
+}
+
+.aboutdetails li {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+.aboutdetails span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.rightabout {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 80px 30px 40px 30px;
+    overflow-y: auto;
+}
+
+.rightabout .card {
+    width: 85%;
+    max-width: 380px;
+    height: 200px;
+}
+
+.skill-bars {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 0.95em;
+}
+
+.skill-header span:first-child {
+    font-weight: 500;
+}
+
+.skill-header span:last-child {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--gradient);
+    border-radius: 10px;
+    animation: fillBar 2s ease-out;
+    box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5);
+    position: relative;
+}
+
+.skill-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    .leftabout {
+        width: 100%;
+        min-height: auto;
+        padding: 30px 20px;
+    }
+
+    .circle-line {
+        display: none;
+    }
+
+    .aboutdetails h1 {
+        padding-left: 15px;
+    }
+
+    .aboutdetails li {
+        padding-left: 15px;
+    }
+
+    .skill-bars {
+        padding-left: 15px;
+    }
+
+    .rightabout {
+        width: 100%;
+        min-height: auto;
+        padding: 30px 20px;
+    }
+
+    .rightabout .card {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+    }
+}
