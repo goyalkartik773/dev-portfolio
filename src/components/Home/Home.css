@@ -221,11 +221,12 @@
         width: 70%;
     }
 
-    .cta-buttons {
+    .buttons {
         gap: 15px;
+        justify-content: center;
     }
 
-    .cta-buttons button {
+    .buttons button {
         padding: 10px 28px;
         font-size: 14px;
     }
@@ -288,14 +289,23 @@
         text-align: center;
     }
 
-    .cta-buttons {
+    .buttons {
         justify-content: center;
         gap: 12px;
+        flex-wrap: wrap;
     }
 
-    .cta-buttons button {
+    .buttons button {
         padding: 10px 25px;
         font-size: 13px;
+        min-width: 140px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        flex: 1;
+        min-width: 140px;
+        max-width: 200px;
     }
 
     .social-links {
@@ -332,23 +342,24 @@
         margin-top: 10px;
     }
 
-    .cta-buttons {
+    .buttons {
         flex-direction: column;
         width: 100%;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
 
-    .cta-buttons button {
+    .buttons button {
         width: 100%;
-        max-width: 250px;
-        padding: 12px 20px;
-        font-size: 12px;
+        max-width: 280px;
+        padding: 14px 24px;
+        font-size: 14px;
     }
 
+    .btn-primary,
     .btn-secondary {
         width: 100%;
-        max-width: 250px;
+        max-width: 280px;
     }
 
     .social-links {
