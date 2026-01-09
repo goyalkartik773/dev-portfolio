@@ -76,7 +76,7 @@ function Home() {
             </div>
             <div className="btn-primary">
               <button>
-                <a href="/RESUME_KARTIK_GOEL.pdf" download>Download CV</a>
+                <a href="/Kartik Goel - Resume.pdf" download>Download CV</a>
               </button>
             </div>
           </div>

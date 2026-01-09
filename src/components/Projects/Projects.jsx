@@ -68,7 +68,6 @@ function Projects() {
           githubUrl="https://github.com/goyalkartik773/JiitBot"
           liveUrl="https://jiitbot-assistant.streamlit.app/"
         />
-
         <Card
           title="BUYER LEAD INTAKE APP"
           image={ise}
